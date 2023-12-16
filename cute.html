@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f7f7; /* Light pink background color */
+        }
+
+        #question {
+            color: pink;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: 20px; /* Add some margin between the image and buttons */
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background-color: pink;
+            color: white;
+        }
+
+        #no-button {
+            position: absolute;
+            right: -50px; /* Adjust the distance from the right edge */
+            bottom: 20px;
+            transition: right 0.5s;
+        }
+
+        #no-button:hover {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="question">WILL YOU GO OUT WITH ME</div>
+
+    <img src="cute.gif" alt="Centered Image">
+    
+    <div class="button-container">
+        <button id="yes-button" onclick="handleYes()">Yes</button>
+        <button id="no-button" onclick="handleNo()">No</button>
+    </div>
+
+    <script>
+        function handleYes() {
+            // Add your logic for the "Yes" button here
+            alert('You clicked Yes!');
+        }
+
+        function handleNo() {
+            // Add your logic for the "No" button here
+            alert('You clicked No!');
+        }
+    </script>
+</body>
+</html>
